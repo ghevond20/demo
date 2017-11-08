@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import Loading from './Loading'
 import * as actions from '../actions/actionTypes'
+import {fetchPosts } from '../actions/actionTypes'
+
+
+
 class NewsFeed extends Component {
-
-
+  componentDidMount() {
+      const { dispatch} = this.props
+      dispatch(fetchPosts())
+  }
 
   render() {
-    console.log(this.props);
-    if(!this.props.data){
-      actions.fatchRequest()
+    const { data } = this.props;
+    if(!data){
       return (<Loading />)
     }
-    return this.props.data.map(item => {
+    return data.map(item => {
       return (<div>
-          <span className="title">{this.props.item.content.title_alt}</span>
-          <span className="description">{item.content.description}</span>
+          <span className="title">{item.content.title_alt}</span>
+          <span className="description">{item.description}</span>
         </div>)
     })
   }

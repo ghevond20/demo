@@ -1,19 +1,12 @@
-const api = (state = [], action) => {
+const api = (state = {}, action) => {
   switch (action.type) {
-    case 'REQUEST_RESPONCE':
-    let data = clearJsonResponce(action.data)
-      return [
-        ...state,
-        data
-      ]
+    case "REQUEST_POSTS":
+      return state;
+    case "RECEIVE_POSTS":
+      return {...state, data: action.data};
     default:
-      return state
+      return state;
   }
-}
-
-
-const clearJsonResponce = (data) => {
-  return data.feed
 }
 
 export default api
