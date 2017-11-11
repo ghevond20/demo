@@ -2,6 +2,21 @@ export const REQUEST_POSTS = 'REQUEST_POSTS'
 export const RECEIVE_POSTS = 'RECEIVE_POSTS'
 
 
+export const clickOnItem = (item, index) => ({
+  type: 'CHANGE_ITEM',
+  index,
+  item
+})
+
+export const deleteItems = (index) => ({
+  type: 'DELETE_ITEM',
+  index
+})
+
+export const clearCurrentItems = () => ({
+  type: 'CLEAR_ITEM'
+})
+
 
 export const requestPosts = peyload => ({
   type: REQUEST_POSTS,

@@ -3,6 +3,7 @@
 	"mesg": "all good",
 	"data": {
 		"feed": [{
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": true,
 			"digg_score": 323,
@@ -297,6 +298,7 @@
 			"ios_enabled": true,
 			"date_published": 1509724178
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 43,
@@ -571,6 +573,7 @@
 			"ios_enabled": true,
 			"date_published": 1509736691
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 36,
@@ -845,6 +848,7 @@
 			"ios_enabled": true,
 			"date_published": 1509740663
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 193,
@@ -1166,6 +1170,7 @@
 			"ios_enabled": true,
 			"date_published": 1509715705
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 97,
@@ -1477,6 +1482,7 @@
 			"ios_enabled": true,
 			"date_published": 1509645656
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 31,
@@ -1761,6 +1767,7 @@
 			"ios_enabled": true,
 			"date_published": 1509654741
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 30,
@@ -2339,6 +2346,7 @@
 			"ios_enabled": true,
 			"date_published": 1509729010
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 29,
@@ -2623,6 +2631,7 @@
 			"ios_enabled": true,
 			"date_published": 1509626395
 		}, {
+			"status":"visible",
 			"for_digg_hp": true,
 			"for_digg_av": false,
 			"digg_score": 28,
