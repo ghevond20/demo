@@ -8,6 +8,19 @@ export const clickOnItem = (item, index) => ({
   item
 })
 
+export const showAddFormAction = () => ({
+  type: 'SHOW_ADDFORM'
+})
+
+export const addNewItem = (item) => ({
+  type: 'ADD_NEWITEM',
+  item
+})
+
+export const hideAddFormAction = () => ({
+  type: 'HIDE_ADDFORM'
+})
+
 export const deleteItems = (index) => ({
   type: 'DELETE_ITEM',
   index

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Loading from './Loading'
-import {fetchPosts, clickOnItem, clearCurrentItems, deleteItems} from '../actions/actionTypes'
+import AddFormContainer from '../container/AddForm'
+import {addNewItem, showAddFormAction, fetchPosts, clickOnItem, clearCurrentItems, deleteItems} from '../actions/actionTypes'
 
 
 
@@ -63,6 +64,25 @@ class NewsFeed extends Component {
       <button onClick={this.ClearItems}>Clear</button>
     )
   }
+
+reRender = (params) => {
+  const { dispatch } = this.props
+
+  dispatch(addNewItem(params))
+}
+
+
+  showAddForm = () => {
+    const { dispatch } = this.props
+
+    dispatch(showAddFormAction())
+  }
+
+   addItem = () => {
+     return (
+       <button onClick={this.showAddForm}>Add Item</button>
+     )
+   }
   render() {
     const { data } = this.props;
     if(!data){
@@ -70,8 +90,10 @@ class NewsFeed extends Component {
     }
 
     return(<div>
+      {this.addItem()}
       {this.deleteCurrentItems()}
       {this.clearButton()}
+      <AddFormContainer reRender={this.reRender}/>
       {this.rendPostItems()}
       {this.renderCurrentItemContent()}
       </div>
